@@ -9,6 +9,7 @@
     background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    z-index: 9999;
 }
 .show-mobile-nav{
     display: none;
@@ -94,6 +95,7 @@
         position: sticky;
         padding: 0 3rem;
         background-color: #fff;
+        z-index: 9999;
     }
     
     .mobile-img{
