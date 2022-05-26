@@ -1,0 +1,41 @@
+.impact_container{
+    width: 100%;
+}
+.impact_container_body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:2rem 0;
+    padding:0 1rem;
+}
+.impact_container_card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin:0.6rem 0;
+}
+.impact_container_card_header{
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #2b7397;
+}
+.impact_container_card_desc{
+    margin: 0 0 0.5rem;
+    text-align:center;
+    padding: 0 2rem;
+    font-weight: 500;
+    font-size:0.8rem;
+    color: #2b7397;
+}
+
+@media (max-width:668px) {
+    .impact_container_body{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+}

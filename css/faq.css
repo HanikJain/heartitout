@@ -1,0 +1,83 @@
+.faq_container{
+    width: 100%;
+    background-color: #f4fbff;
+}
+.faq_container_header{
+    margin: 4rem auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 2rem 0  0;
+    color: var(--c_primary);
+}
+.faq_body{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.faq_body_card{
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    cursor: pointer;
+}
+.faq_body_card_content{
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+.bg-color-one{
+    background-color: #c7e2ef;
+}
+.color-one{
+    color: #32959d;
+}
+.bg-color-two{
+    background-color: #e8faf6;
+}
+.color-two{
+color: #4082a1;
+}
+
+.bg-color-three{
+    background-color: #fdfcf4;
+}
+.color-three{
+color: #765a5a;
+}
+
+
+@media (min-width: 669px) and (max-width: 788px) {
+    .faq_body{
+        width: 80%;
+        margin:auto
+    }
+}
+@media (min-width: 549px) and (max-width: 668px) {
+    .faq_body{
+        width: 90%;
+        margin:auto
+    }
+}
+
+@media (min-width: 400px) and (max-width: 548px) {
+    .faq_body{
+        width: 60%;
+        margin:auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .faq_body{
+        width: 90%;
+        margin:auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}

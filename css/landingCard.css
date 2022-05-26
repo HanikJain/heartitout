@@ -1,0 +1,153 @@
+.twocoln_main{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 1fr;
+}
+.twocoln_main_mobile{
+    display:none;
+}
+
+.twocoln_column1{
+    width: 100%;
+    height: 100%;
+    padding: 0 3rem 0 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: var(--bg_primary);
+    color: white;
+}
+#twocoln_header{
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin: 1rem 0;
+}
+#twocoln_description{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.line{
+    width: 60%;
+    margin: 1rem 0;
+    height: 0.2rem;
+    background-color: white;
+}
+
+.twocoln_column2{
+    width: 100%;
+    height: 100%;
+
+}
+
+.btn-landingCard{
+    background-color:var(--bg-yellow);
+    color: black;
+    border: 1px solid var(--bg-yellow);
+    font-weight:600;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+@media (min-width: 869px) and (max-width: 1000px){
+    .twocoln_column1{
+        padding: 0 3rem 0 3rem;
+    }
+    #twocoln_header{
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    #twocoln_description{
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 669px) and (max-width: 868px){
+    .twocoln_column1{
+        padding: 0 1rem 0 1rem;
+    }
+    #twocoln_header{
+        font-weight: 500;
+        font-size: 1.7rem;
+        margin: 1rem 0;
+    }
+    #twocoln_description{
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+    #twocoln_image0{
+        width: 380px;
+        height: 385px;
+    }
+}
+@media (min-width: 440px) and (max-width: 668px){
+    .twocoln_column1{
+        padding: 0 1rem 0 1rem;
+    }
+    #twocoln_header{
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    #twocoln_description{
+        margin: 1rem 0;
+        font-size: 0.7rem;
+    }
+    #twocoln_image0{
+        width: 290px;
+        height: 295px;
+    }
+    .btn-landingCard{
+        margin: 0.2rem 0;
+    }
+}
+
+@media (max-width: 439px){
+    .twocoln_main{
+        display: none;
+    }
+    .twocoln_main_mobile{
+        display:block;
+    }
+    #twocoln_image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .twocoln_main_mobile_image{
+        background-image: url(../assests/landing.png);
+        width: 100%;
+        height: 450px;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .twocoln_main_mobile_overlay{
+        background: linear-gradient(90deg,transparent,rgba(0,0,0,.3) 35%,rgba(0, 0, 0, 0.7));
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0.2rem 0.3rem 0.2rem 7rem;
+        width: 100%;
+        color: #fff;
+    }
+    .btn-landingCard_overlay{
+        background-color:var(--bg-yellow);
+        color: black;
+        border: 1px solid var(--bg-yellow);
+        font-weight:600;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+
+    #twocoln_header_overlay,
+    #twocoln_description_overlay{
+        margin: 1rem 0;
+    }
+    
+
+}

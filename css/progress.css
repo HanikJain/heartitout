@@ -1,0 +1,126 @@
+.progress_container{
+    width: 100%;
+}
+.progress_container_header{
+    margin: 4rem auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--c_primary);
+}
+.progress_container_body{
+    padding: 0 10rem;
+}
+.progress_container_body_inner{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem
+}
+
+.progress_container_body_image img{
+    width: 100px;
+    height: 100px;
+}
+.progress_container_body_circle_card{
+    height: auto;
+    width: 75px;
+}
+.progress_container_body_circle{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--c_primary);
+    color: white;
+    border-radius:50%;
+    text-align: center;
+    padding-top: 0.8rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+  
+}
+.progress_container_body_inner_content{
+    position: relative;
+}
+.progress_container_body_circle::before{
+    content: "";
+    display: block;
+    height: 134px;
+    width: 2px;
+    background: var(--c_primary1);
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    z-index: -1;
+}
+.progress_container_body_inner_content{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.progress_container_body_inner_content_data{
+    padding-left: 1rem;
+    color: #2B7397;
+}
+
+
+@media (min-width: 769px) and (max-width: 979px) {
+    .progress_container_body{
+        padding: 0 6rem;
+    }
+}
+
+@media (min-width: 469px) and (max-width: 768px) {
+    .progress_container_body{
+        padding: 0 3rem;
+    }
+    .progress_container_body_image img{
+        width: 70px;
+        height: 70px;
+    }
+    .progress_container_body_circle{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding-top: 0.6rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .progress_container_body_circle::before{
+        left: 20px;
+    }
+}
+
+@media (max-width: 468px) {
+    .progress_container_body{
+        padding: 0 2rem;
+    }
+    .progress_container_body_image img{
+        width: 40px;
+        height: 40px;
+    }
+    .progress_container_body_circle{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        padding-top: 0.3rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .progress_container_body_circle::before{
+        left: 14px;
+    }
+
+    .progress_container_body_inner_content_data{
+        font-size: 0.6rem;
+    }
+    .progress_container_body_inner{
+        padding: 2rem 0;
+    }
+    
+}
+
+.progress_container_btn{
+    text-align: center;
+    margin: 4rem 0;
+}

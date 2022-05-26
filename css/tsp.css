@@ -1,0 +1,277 @@
+.tsp_container{
+    width: 100%;
+}
+.tsp_container_body{
+    width: 80%;
+    margin: 0 auto;
+}
+.tsp_container_header{
+    margin: 4rem auto 2rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--c_primary);
+}
+.tsp_card_container{
+    width: 100%;
+}
+.tsp_price_card_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tsp_price_card_session{
+    margin-bottom: 1rem;
+}
+.tsp_price_card_body{
+    width: 80%;
+    border: 1px solid #2b7397;
+    height: 80%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 0;
+    border-radius: 0.4rem;
+    gap: 1rem;
+
+}
+.tsp_price_card_body_type{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.tsp_price_card_body_header{
+    text-align: center;
+    color: #4c6069;
+    font-weight: 600;
+}
+
+.tsp_price_card_body_desc{
+    padding: 0 0.7rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #4c6069;
+}
+
+.tsp_price_card_body_period,
+.tsp_price_card_body_price{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.tsp_price_card_body_period_one,
+.tsp_price_card_body_period_two{
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #4c6069;
+}
+.tsp_price_card_body_price_mrp{
+    color: #4c6069;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.tsp_price_card_body_price_mrp_cancel{
+    color: #4c6069;
+    text-decoration:line-through;
+    text-align: center;
+}
+
+.tsp_price_card_body_price_discount{
+    color:  #2b7397;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.tsp_price_card_body_btn{
+    width: 100.9%;
+    background-color: #2b7397;
+    color: #fff;
+    border: 1px solid #2b7397;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.tsp_card{
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4fbff;
+    padding: 1rem;
+    cursor: pointer;
+}
+.tsp_card_price{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.modalSession {
+    position: fixed;
+    top: 14vh;
+    left: 30%;
+    width: 40%;
+    max-height: 460px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    overflow-y: auto; 
+  }
+
+.backdropSession{
+    background-color: var(--bg_primary);
+    opacity: 0.75;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+} 
+
+.modalSession_header{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 2rem 0 0.5rem;
+    text-align: center;
+}
+
+.modalSession_card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.modalSession_card_content{
+    width: 90px;
+    height: 90px;
+    margin: 0.5rem auto;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.modalSession_subheader{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #4c6069;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.modalSession_desc{
+    font-weight: 300;
+    font-size: 1rem;
+    color: #4c6069;
+    margin: 1rem auto;
+    text-align: center;
+}
+.modalSession_price{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #4c6069;
+    margin: 1rem auto;
+    text-align: center;
+}
+.modalSession_price_mrp{
+    text-decoration: line-through;
+}
+.modalSession_price_discount{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #2b7397;
+    margin-left: 5px;
+}
+.modalSession_btn_close{
+    background-color: white;
+    color: var(--bg_primary);
+    border: 1px solid var(--bg_primary);
+    padding: 0.4rem;
+    border-radius:0.2rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+.modalSession_btn_buy{
+    background-color: var(--bg_primary);
+    color: white;
+    border: 1px solid var(--bg_primary);
+    padding: 0.4rem;
+    border-radius:0.2rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+@keyframes slide-down {
+    from {
+    opacity: 0;
+    transform: translateY(-3rem);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px){
+    .tsp_card{
+        width: 90%;
+    }
+    .modalSession {
+        width: 90%;
+        left: 5%;
+    }
+    .modalSession_header{
+        margin: 5rem 0 0.5rem;
+    }
+}
+
+.color_one{
+    color: #2b7397;
+}
+
+.bor_two{
+    border: 1px solid #32959d;
+}
+.bor_three{
+    border: 1px solid #9c7777;
+}
+
+.color_two{
+    color: #32959d;
+}
+.bg_color_two{
+    background-color: #32959d;
+}
+
+.color_three{
+    color: #9c7777;
+}
+.bg_color_three{
+    background-color: #9c7777;
+}
+.hide-dropdownSession{
+    display: none;
+}
+
+.hide{
+    display:none;
+}

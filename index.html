@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart it Out - Online Counselling</title>
+
+    <!-- JS -->
+    <script src="./js/index.js" async ></script>
+
+
+
+    <!-- add icon link -->
+    <link rel = "icon" href = 
+    "https://heartitout.in/links/wp-content/uploads/2021/12/logo.png" 
+    type = "image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/landingCard.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/help.css">
+    <link rel="stylesheet" href="./css/progress.css">
+    <link rel="stylesheet" href="./css/tsp.css">
+    <link rel="stylesheet" href="./css/assurance.css">
+    <link rel="stylesheet" href="./css/impact.css">
+    <link rel="stylesheet" href="./css/testimonial.css">
+    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/ue.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/newsletter.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+        <!-- bootstrapcdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-desktop hide-desktop-nav">
+        <div class="navbar-desktop-title">
+            <img src="https://heartitout.in/links/wp-content/uploads/2021/12/logo.png" alt="logo">
+        </div>
+        <div class="navbar-desktop-navlinks">
+            <a href="#" class="home-link">Home</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICE</a>
+            <a href="#">EVENTS</a>
+            <a href="#">HELP A FRIEND</a>
+            <a href="#">STORE</a>
+            <a href="#">SELF-TEST</a>
+            <a href="#">BLOG</a>
+            <button class="btn-covid">COVID-19</button>
+            <button class="btn-session" >BOOK YOUR SESSION</button>
+
+        </div>
+    </nav>
+    <nav class="show-mobile-nav">
+            <div class="menu-icon-container" onclick="dropdown()" >
+                <img src="./assests/menu.png" alt="">
+                <!-- <div class = "backdrop" ></div> -->
+                <div class = "navmodal hide-dropdown" id="modal">
+                    <div class="navbar-mobile-navlinks">
+                        <a href="#" class="home-link">Home</a>
+                        <a href="#">ABOUT</a>
+                        <a href="#">SERVICE</a>
+                        <a href="#">EVENTS</a>
+                        <a href="#">HELP A FRIEND</a>
+                        <a href="#">STORE</a>
+                        <a href="#">SELF-TEST</a>
+                        <a href="#">BLOG</a>
+                        <button class="btn-covid">COVID-19</button>
+                        <button class="btn-session" >BOOK YOUR SESSION</button>
+            
+                    </div>
+                </div>
+
+            </div>
+            <div class="navbar-desktop-title">
+                <img src="https://heartitout.in/links/wp-content/uploads/2021/12/logo.png" alt="logo" class="mobile-img">
+            </div>
+    </nav>
+    <!-- landingCard -->
+    <div class="twocoln_main">
+        <div class="twocoln_column1">
+                <h1 id="twocoln_header">Your Well-Being Is Our Priority</h1>
+                <div id="twocoln_description">The Support You Need Is Just A Few Clicks Away. Book A Session With Us Today. </div>
+                <div class="line"></div>
+                <button class="btn-session btn-landingCard" >BOOK YOUR SESSION</button>
+        </div>
+        <div class="twocoln_column2">
+            <img src="./assests/landing.png" alt="" id="twocoln_image0">
+        </div>
+    </div>
+
+    <div class="twocoln_main_mobile">
+        <div class="twocoln_main_mobile_image">
+            <div class="twocoln_main_mobile_overlay">
+                <h2 id="twocoln_header_overlay">Your Well-Being Is Our Priority</h2>
+                <div id="twocoln_description_overlay">The Support You Need Is Just A Few Clicks Away. Book A Session With Us Today. </div>
+                <button class="btn-session btn-landingCard_overlay" >BOOK YOUR SESSION</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE -->
+    <div class="service_container">
+        <div class="service_container_header">Our Services</div>
+        <div class="service_container_body">
+            <div class="service_card">
+                <div class="service_card_image" >
+                    <img src="https://heartitout.in/links/wp-content/uploads/2022/01/best-individual-therapy-counselling-bangalore-india.png" alt="" >
+                </div>
+                <div class="service_card_body">
+                    <div class="service_card_body_header">Individual Therapy</div>
+                    <div class="service_card_body_description">Lorem ipsum dolor sit amet, consectetur adip asas Lorem ipsum dolor sit </div>
+                    <div class="service_card_body_btn">
+                        <button class="service_card_body_btn_k"  id="indbutton" ">Know More</button>
+                        <button class="service_card_body_btn_help" >Get Help</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="service_card_image" >
+                    <img style="width: 70px; height: 90px" src="https://heartitout.in/links/wp-content/uploads/2022/01/best-couples-therapy-counselling-bangalore-india.png" alt="" >
+                </div>
+                <div class="service_card_body">
+                    <div class="service_card_body_header">Couple Therapy</div>
+                    <div class="service_card_body_description">Lorem ipsum dolor sit amet, consectetur adip asas Lorem ipsum dolor sit </div>
+                    <div class="service_card_body_btn">
+                        <button class="service_card_body_btn_k" id="couplebutton" >Know More</button>
+                        <button class="service_card_body_btn_help" >Get Help</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="service_card_image" >
+                    <img style="width: 70px; height: 100px" src="https://heartitout.in/links/wp-content/uploads/2022/01/best-family-therapy-counselling-bangalore-india.png" alt="" >
+                </div>
+                <div class="service_card_body">
+                    <div class="service_card_body_header">Family Therapy</div>
+                    <div class="service_card_body_description">Lorem ipsum dolor sit amet, consectetur adip asas Lorem ipsum dolor sit </div>
+                    <div class="service_card_body_btn">
+                        <button class="service_card_body_btn_k" id="familybutton" >Know More</button>
+                        <button class="service_card_body_btn_help" >Get Help</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="service_card_image" >
+                    <img src="https://heartitout.in/links/wp-content/uploads/2022/01/best-supervision-therapy-counselling-bangalore-india.png" alt="" >
+                </div>
+                <div class="service_card_body">
+                    <div class="service_card_body_header">Supervision Therapy</div>
+                    <div class="service_card_body_description">Lorem ipsum dolor sit amet, consectetur adip asas Lorem ipsum dolor sit </div>
+                    <div class="service_card_body_btn">
+                        <button class="service_card_body_btn_k" id="superbutton" >Know More</button>
+                        <button class="service_card_body_btn_help" >Get Help</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="" id="backdropservice"></div>
+    <div class = "servicemodal hide-servicedropdown" id="serviceModal">
+        <div class="service_card_body_modal">
+            <div class="service_card_body_header" id="card_modal_header"></div>
+            <div class="service_card_body_description">
+                Lorem ipsum dolor sit amet, consectetur adip asas Lorem ipsum dolor sit ,
+                Lorem ipsum dolor sit amet, consectetur adip asas Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adip asas Lorem ipsum dolor sit ,
+                Lorem ipsum dolor sit amet
+            </div>
+            <div class="service_card_body_btn">
+                <button class="service_card_body_btn_k"  onClick="closeCardModal();">Close</button>
+                <button class="service_card_body_btn_help" >Get Help</button>
+            </div>
+        </div>
+    </div>    
+
+    <div class="help_container">
+        <div class="help_container_header">What We Can Help You With</div>
+        <div class="help_container_header_body">
+            <div class="help_container_header_body_img"><img src="./assests/depression.png" alt=""></div>
+            <div class="help_container_header_body_img" ><img src="./assests/betterlife.png" alt=""></div>
+            <div class="help_container_header_body_img" ><img src="./assests/relationship.png" alt=""></div>
+            <div class="help_container_header_body_img" ><img src="./assests/family.png" alt=""></div>
+        </div>
+    <div>
+
+    <!-- Progress line -->
+    <div class="progress_container">
+        <div class="progress_container_header">How it Works</div>
+        <div class="progress_container_body">
+            <div class="progress_container_body_inner">
+                <div class="progress_container_body_image">
+                    <img src="./assests/succes.png" alt="">
+                </div>
+                <div class="progress_container_body_inner_content" >
+                    <div class="progress_container_body_circle_card">
+                        <div class="progress_container_body_circle" > 1 </div>
+                    </div>
+                    <div class="progress_container_body_inner_content_data" >First time booking?</div>
+                </div>
+            </div>
+            <div class="progress_container_body_inner">
+                <div class="progress_container_body_image">
+                    <img src="./assests/qna.png" alt="">
+                </div>
+                <div class="progress_container_body_inner_content" >
+                    <div class="progress_container_body_circle_card">
+                        <div class="progress_container_body_circle" > 2 </div>
+                    </div>
+                    <div class="progress_container_body_inner_content_data" >Areas where you need support</div>
+                </div>
+            </div>
+            <div class="progress_container_body_inner">
+                <div class="progress_container_body_image">
+                    <img src="./assests/location.png" alt="">
+                </div>
+                <div class="progress_container_body_inner_content" >
+                    <div class="progress_container_body_circle_card">
+                        <div class="progress_container_body_circle" > 3 </div>
+                    </div>
+                    <div class="progress_container_body_inner_content_data" >Pick a Location!</div>
+                </div>
+            </div>
+            <div class="progress_container_body_inner">
+                <div class="progress_container_body_image">
+                    <img src="./assests/pick.png" alt="">
+                </div>
+                <div class="progress_container_body_inner_content" >
+                    <div class="progress_container_body_circle_card">
+                        <div class="progress_container_body_circle" > 4 </div>
+                    </div>
+                    <div class="progress_container_body_inner_content_data" >Finally, pick a type!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="progress_container_btn" ><button class="btn-session" >Book Your Session</button></div>
+
+    <!-- Therapy session -->
+    <div class="tsp_container">
+        <div class="tsp_container_header">Thearpy Session Packages</div>
+        <div class="tsp_container_body">
+            <div class="tsp_card_container" >
+                <div class="tsp_card" id="tsp_card">
+                    <span>Individual Packages</span>
+                    <span><i class="fa fa-caret-down"></i></span>
+                </div>
+                <div class="tsp_card_price hide" id="tsp_card_price">
+                    <div class="tsp_price_card_container" >
+                        <div class="tsp_price_card_session color_one">3 Sessions</div>
+                        <div class="tsp_price_card_body" >
+                            <div class="tsp_price_card_body_type">Starter </div>
+                            <div class="tsp_price_card_body_header">Start your journey</div>
+                            <div class="tsp_price_card_body_desc">Start your therapeutic with a highly skilled therapist</div>
+                            <div class="tsp_price_card_body_period">
+                                <div class="tsp_price_card_body_period_one">3 thearpy sessions</div>
+                                <div class="tsp_price_card_body_period_two">(3 x 1 hour sessions)</div>
+                            </div>
+                            <div class="tsp_price_card_body_price">
+                                <div class="tsp_price_card_body_price_mrp">Price: <span class="tsp_price_card_body_price_mrp_cancel">2997</span>/- </div>
+                                <div class="tsp_price_card_body_price_discount">2847/-</div>
+                            </div>
+                            <button class="tsp_price_card_body_btn" onClick="buyPackageModal()" >Buy Package</button>
+                        </div>
+                    </div>
+                    <div class="tsp_price_card_container">
+                        <div class="tsp_price_card_session color_two">5 Sessions</div>
+                        <div class="tsp_price_card_body bor_two" >
+                            <div class="tsp_price_card_body_type">Standard </div>
+                            <div class="tsp_price_card_body_header">Most opted package</div>
+                            <div class="tsp_price_card_body_desc">Awaken your insights and find ways to tackle your challenges  </div>
+                            <div class="tsp_price_card_body_period">
+                                <div class="tsp_price_card_body_period_one">5 thearpy sessions</div>
+                                <div class="tsp_price_card_body_period_two">(5 x 1 hour sessions)</div>
+                            </div>
+                            <div class="tsp_price_card_body_price">
+                                <div class="tsp_price_card_body_price_mrp">Price: <span class="tsp_price_card_body_price_mrp_cancel">4995</span>/- </div>
+                                <div class="tsp_price_card_body_price_discount color_two">4499/-</div>
+                            </div>
+                            <button class="tsp_price_card_body_btn bg_color_two bor_two"  >Buy Package</button>
+                        </div>
+                    </div>
+                    <div class="tsp_price_card_container" >
+                        <div class="tsp_price_card_session color_three">10 Sessions</div>
+                        <div class="tsp_price_card_body bor_three" >
+                            <div class="tsp_price_card_body_type">Premium </div>
+                            <div class="tsp_price_card_body_header">Best & Expert Recommended</div>
+                            <div class="tsp_price_card_body_desc">Complete inner transformation and regain ypur inner harmony </div>
+                            <div class="tsp_price_card_body_period">
+                                <div class="tsp_price_card_body_period_one">10 thearpy sessions</div>
+                                <div class="tsp_price_card_body_period_two">(10 x 1 hour sessions)</div>
+                            </div>
+                            <div class="tsp_price_card_body_price">
+                                <div class="tsp_price_card_body_price_mrp">Price: <span class="tsp_price_card_body_price_mrp_cancel">9999</span>/- </div>
+                                <div class="tsp_price_card_body_price_discount color_three">7999/-</div>
+                            </div>
+                            <button class="tsp_price_card_body_btn bg_color_three bor_three">Buy package</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tsp_card_container" >
+                <div class="tsp_card">
+                    <span>Couple Packages</span>
+                    <span><i class="fa fa-caret-down"></i></span>
+                </div>
+                <div></div>
+            </div>
+            <div class="tsp_card_container" >
+                <div class="tsp_card">
+                    <span>Family Packages</span>
+                    <span><i class="fa fa-caret-down"></i></span>
+                </div>
+                <div></div>
+            </div>
+            <div class="tsp_card_container" >
+                <div class="tsp_card">
+                    <span>Supervision Packages</span>
+                    <span><i class="fa fa-caret-down"></i></span>
+                </div>
+                <div></div>
+            </div>
+        </div>    
+    </div>
+    <div class = "" id="backdropsession"></div>
+    <div class = "modalSession hide-dropdownSession" id="modalSession">
+        <div class = "modalSession_header">Start Package of 3 sessions</div>
+        <div class = "modalSession_subheader">Start your journey</div>
+        <div class = "modalSession_card">
+            <div class="bg-color-one modalSession_card_content" >
+                <div class="color-one"> Lorem ipsum dolor sit, con mass</div>
+            </div>
+            <div class="bg-color-one modalSession_card_content" >
+                <div class="color-one"> Lorem ipsum dolor sit, con mass</div>
+            </div>
+            <div class="bg-color-one modalSession_card_content" >
+                <div class="color-one"> Lorem ipsum dolor sit, con mass</div>
+            </div>
+        </div>
+        <div class = "modalSession_desc">Start your therapeutic with highly skilled therapist</div>
+        <div class = "modalSession_price">
+            <span class = "modalSession_price_p"> Price: </span>
+            <span class = "modalSession_price_mrp"> 2997/- </span>
+            <span class = "modalSession_price_discount">2847/-</span>
+        </div>
+        <div class="modalSession_btn">
+            <button class="modalSession_btn_close"  onClick="closeSessionCardModal();">Close</button>
+            <button class="modalSession_btn_buy" >Buy Package</button>
+        </div>
+    </div>
+                    
+
+    
+    <!-- Assurance -->
+    <div class="assurance_container">
+        <div class="assurance_container_header">What We Can Assure</div>
+        <div class="assurance_container_body">
+            <div class="assurance_container_card">
+                <div class="assurance_container_card_img"> <img src="./assests/security.png" alt=""></div>
+                <div class="assurance_container_card_header">Focus on results</div>
+                <div class="assurance_container_card_desc">Regualar progress tracking </div>
+            </div>
+            <div class="assurance_container_card">
+                <div class="assurance_container_card_img"> <img src="./assests/graph.png" alt=""></div>
+                <div class="assurance_container_card_header">Confidentiality</div>
+                <div class="assurance_container_card_desc">Secure and confidential session</div>
+            </div>
+            <div class="assurance_container_card">
+                <div class="assurance_container_card_img"> <img src="./assests/video.png" alt=""></div>
+                <div class="assurance_container_card_header">Convenience</div>
+                <div class="assurance_container_card_desc">In person and online communication mode </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- impact -->
+    <div class="impact_container">
+        <div class="impact_container_body">
+            <div class="impact_container_card">
+                <div class="impact_container_card_header">5000+</div>
+                <div class="impact_container_card_desc">Hours of Thearpy</div>
+            </div>
+            <div class="impact_container_card">
+                <div class="impact_container_card_header">2000+</div>
+                <div class="impact_container_card_desc">Lives Impacted</div>
+            </div>
+            <div class="impact_container_card">
+                <div class="impact_container_card_header">150+</div>
+                <div class="impact_container_card_desc">Contributors </div>
+            </div>
+            <div class="impact_container_card">
+                <div class="impact_container_card_header">8</div>
+                <div class="impact_container_card_desc">Mental Health Professionals</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonial">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial_container">
+                    <div class="testimonial_container_header">Client Name 1</div>
+                    <div class="testimonial_container_body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do . 
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="testimonial_container">
+                    <div class="testimonial_container_header">Client Name 2</div>
+                    <div class="testimonial_container_body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do . 
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial_container">
+                    <div class="testimonial_container_header">Client Name </div>
+                    <div class="testimonial_container_body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do . 
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    <div class="testimonial_two" >
+        <div>We thrive when you do!</div>
+        <div>Pour your heart out to. Speak to a psychologist today.</div>
+        <div><button class="btn-session" >Book Your Session</button></div>
+    </div>
+
+
+    <!-- FAQ's -->
+    <div class="faq_container">
+        <div class="faq_container_header">FAQ's</div>
+        <div class="faq_body">
+            <div class="faq_body_card bg-color-one" >
+                <div class="faq_body_card_content color-one"> What is Mental Health?</div>
+            </div>
+            <div class="faq_body_card bg-color-two" >
+                <div class="faq_body_card_content color-two"> What services are provided?</div>
+            </div>
+            <div class="faq_body_card bg-color-one" >
+                <div class="faq_body_card_content color-one"> How can therapy help?</div>
+            </div>
+            <div class="faq_body_card bg-color-three" >
+                <div class="faq_body_card_content color-three"> Who can benefit from therapy?</div>
+            </div>
+            <div class="faq_body_card bg-color-three" >
+                <div class="faq_body_card_content color-three"> Who can go to therapy?</div>
+            </div>
+            <div class="faq_body_card bg-color-one" >
+                <div class="faq_body_card_content color-one "> What to expect from session?</div>
+            </div>
+            <div class="faq_body_card bg-color-two" >
+                <div class="faq_body_card_content color-two"> Booking your session?</div>
+            </div>
+            <div class="faq_body_card bg-color-one" >
+                <div class="faq_body_card_content color-one"> What if I don't line it?</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Upcoming events -->
+    <div class="ue_container">
+        <div class="ue_container_header">Upcoming Events</div>
+        <div class="ue_container_card">
+            <div class="ue_container_card_image"></div>
+            <div class="ue_container_card_body">
+                <div class="ue_container_card_body_header" >Folding Peace: Origami For Calmness</div>
+                <div class="ue_container_card_body_desc" >
+                    Inspired by Origami's mindfulness and the art of play, Folding Peace is Heart It Out’s way of approaching creative exploration
+                </div>
+                <div class="ue_container_card_body_date" >
+                    Saturday, January 19th
+                </div>
+                <div class="ue_container_card_body_time" >10:30 AM - 12:30 PM</div>
+                <div class="ue_container_card_body_location" >Heart It Out, Koramangala</div>
+                <div class="ue_container_card_body_btn" >
+                    <button class="ue_container_card_body_btn_know" >Know more</button>
+                    <button class="ue_container_card_body_btn_help" >Get Tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="ue_container_header_link"><a href="#">Browse more events</a>  </div>
+
+    <!-- new and media -->
+    <div class="nm_container">
+        <div class="nm_container_header">News and Media</div>
+        <div class="nm_container_header_body">
+            <div class="nm_container_header_body_img"><img src="./assests/bm.png" alt=""></div>
+            <div class="nm_container_header_body_img" ><img src="./assests/dc.png" alt=""></div>
+            <div class="nm_container_header_body_img" ><img src="./assests/dh.png" alt=""></div>
+            <div class="nm_container_header_body_img" ><img src="./assests/it.png" alt=""></div>
+            <div class="nm_container_header_body_img" ><img src="./assests/quint.png" alt=""></div>
+            <div class="nm_container_header_body_img" ><img src="./assests/ys.png" alt=""></div>
+        </div>
+    <div>
+
+    <!-- newsletter -->
+    <div class="newsletter_container">
+        <div class="newsletter_container_img"><img src="./assests/newsletter.png" alt=""></div>
+        <div class="newsletter_container_body">
+            <div class="newsletter_container_header">
+                Subscribe to our newsletter, “<span class="newsletter_container_header_kw" >Better Human</span>” 
+                and stay up to date with everything at Heart It Out!
+            </div>
+            <div class="newsletter_container_form_container">
+                <form action="" class="newsletter_container_form">
+                    <input type="email" placeholder="Enter Email ID">
+                    <button class="newsletter_container_btn">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer_logo" > <img src="https://heartitout.in/links/wp-content/uploads/2021/12/logo.png" alt="logo"></div>
+        <div class="footer_line"></div>
+        <div class="footer_content">
+            <div class="footer_content_col1">
+                <div>Contact</div>
+                <div class="footer_content_col1_address">
+                    <div class="footer_content_col1_address_img"><img src="./assests/locationicon.png" alt=""></div>  
+                    <div class="footer_content_col1_address_details">#42, 7th 'B' Cross Koramangala 4th Block Bangalore - 560034</div>
+                </div>
+                <div class="footer_content_col1_address">
+                    <div class="footer_content_col1_address_img"><img src="./assests/email.png" alt=""></div>  
+                    <div class="footer_content_col1_details"><a href="mailto:hello@heartitout.in">hello@heartitout.in</a></div>
+                </div>
+                <div class="footer_content_col1_address">
+                    <div class="footer_content_col1_address_img"><img src="./assests/phone.png" alt=""></div>  
+                    <div class="footer_content_col1_details"><a href="tel:+91 789 255 1372">+91 789 255 1372</a></div>
+                </div>
+                <div class="footer_content_col1_sm">
+                    <div><a src="https://www.instagram.com/heartitout/">
+                        <img src="https://heartitout.in/links/wp-content/uploads/2021/08/instagram_1.png" alt="">
+                    </a></div>
+                    <div>
+                        <a src="https://www.facebook.com/HeartitOut.in/">
+                            <img src="https://heartitout.in/links/wp-content/uploads/2021/08/facebook_1.png" alt=""></a></div>
+                    <div><a src="https://twitter.com/HeartItOut">
+                        <img src="https://heartitout.in/links/wp-content/uploads/2021/08/twitter_1.png" alt=""></a></div>
+                    <div><a src="https://www.linkedin.com/company/heart-it-out/?originalSubdomain=in">
+                        <img src="https://heartitout.in/links/wp-content/uploads/2021/08/linkden_1.png" alt=""></a></div>
+                    <div><a scr="https://www.youtube.com/channel/UC4HoegVOJxA8FuslWN13S0g">
+                        <img src="https://heartitout.in/links/wp-content/uploads/2021/08/youtube_1.png" alt=""></a></div>
+
+                </div>
+
+            </div>
+            <div class="footer_content_col2">
+                <div class="footer_content_col2_map">
+                    <img src="./assests/map.png" alt="">
+                </div>
+            </div>
+            <div class="footer_content_col3" >
+                <div class="footer_content_col2_as" >
+                    <div>
+                        ABOUT US
+                    </div>
+                    <div class="footer_content_col2_link" >
+                        <div><a href="#">Our Story</a></div>
+                        <div><a href="#">Our Values</a></div>
+                        <div><a href="#">Our Founders</a></div>
+                        <div><a href="#">Meet the Team</a></div>
+
+                    </div>
+                </div>
+                <div class="footer_content_col2_s" >
+                    <div>
+                        SERVICES
+                    </div>
+                    <div class="footer_content_col2_link" >
+                        <div><a href="#">Individual therapy</a></div>
+                        <div><a href="#">Couple therapy</a></div>
+                        <div><a href="#">Family therapy</a></div>
+                        <div><a href="#">Supervision</a></div>
+
+                    </div>
+                </div>
+                <div class="footer_content_col2_h" >
+                    <div>
+                        HELP
+                    </div>
+                    <div class="footer_content_col2_link" >
+                        <div><a href="#">Contact Us</a></div>
+                        <div><a href="#">FAQ's</a></div>
+                        <div><a href="#">Blogs</a></div>
+                        <div><a href="#">Chat With Us</a></div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; color: #fff;">©2021 Heartitout</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" async></script>
+    </body>
+</html>
