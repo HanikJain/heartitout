@@ -36,10 +36,11 @@
 }
 
 .navbar-desktop-navlinks a:visited,
+.navbar-desktop-navlinks a:link,
 .navbar-desktop-navlinks a:active,
 .navbar-desktop-navlinks a
 {
-    text-decoration: none;
+    text-decoration: none ;
     color: var(--c_navLink);
 }
 .home-link{
@@ -48,6 +49,8 @@
 
 .navbar-desktop-navlinks a:hover{
     border-bottom: 2px solid var(--c_primary);
+    text-decoration: none ;
+    color: var(--c_navLink);
 }
 
 .btn-covid{
@@ -145,6 +148,7 @@
     }
 
     .navbar-mobile-navlinks a:visited,
+    .navbar-mobile-navlinks a:link,
     .navbar-mobile-navlinks a:active,
     .navbar-mobile-navlinks a
     {
@@ -158,6 +162,8 @@
 
     .navbar-mobile-navlinks a:hover{
         border-bottom: 2px solid white;
+        text-decoration: none ;
+        color: white;
     }
 
     .btn-covid{
